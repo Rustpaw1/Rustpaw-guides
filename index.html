@@ -1,138 +1,174 @@
-
 !DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Paw Lee Digital Guides</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paw Lee | Life Simplified</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      font-family: 'Raleway', sans-serif;
-      background: #f8f9fa;
+      padding: 0;
+      background: #fdfdfd;
       color: #333;
     }
     header {
-      background: #b22222;
-      color: white;
+      background-color: #b30000;
       padding: 20px;
+      color: white;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     header h1 {
       margin: 0;
       font-size: 2.5em;
     }
-    header p {
-      font-size: 1.2em;
-      margin-top: 8px;
+    .subheading {
+      font-size: 1.1em;
+      color: #ffeaea;
     }
-.container {
+    .hero {
+      background-image: url('https://i.imgur.com/7Y5MEaF.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h2 {
+      background: rgba(0, 0, 0, 0.5);
       padding: 20px;
+      border-radius: 12px;
+      font-size: 2em;
+    }
+    .container {
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .guide-list {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, min
+.guide:hover {
+      transform: scale(1.03);
     }
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: scale(1.02);
-    }
-    .card img {
+    .guide img {
       width: 100%;
-      height: 160px;
+      height: 150px;
       object-fit: cover;
     }
-    .card h3 {
-      margin: 15px;
+    .guide-content {
+      padding: 15px;
+    }
+    .guide-content h3 {
+      margin: 0;
       font-size: 1.2em;
+      color: #b30000;
     }
-    .card p {
-      margin: 0 15px 15px;
+    .guide-content p {
       font-size: 0.95em;
+      margin-top: 8px;
     }
-    .buy-buttons {
-      display: flex;
-      justify-content: space-around;
-      padding: 10px 0 15px;
+    .price {
+      font-weight: bold;
+      margin-top: 10px;
+      color: green;
     }
-    .buy-buttons a {
-      text-decoration: none;
+    footer {
+      background-color: #b30000;
       color: white;
-      background: #b22222;
-      padding: 8px 12px;
-      border-radius: 5px;
-      font-size: 0.9em;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .bundle {
+      background: #ffe8e8;
+      padding: 20px;
+      margin-top: 40px;
+      border: 2px dashed #b30000;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .bundle h2 {
+      color: #b30000;
+    }
+    .social-links img {
+      width: 32px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 1.5em;
+        padding: 10px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>🧭 Paw Lee Digital Guides</h1>
-    <p>Simple $1 Guides for Real People, Real Life</p>
+    <h1>Paw Lee</h1>
+    <div class="subheading">Life Simplified • $1 Digital Hobby & How-To Guides</div>
   </header>
+  <div class="hero">
+    <h2>Handcrafted Knowledge • $1 at a Time</h2>
+  </div>
   <div class="container">
-div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Hummingbird_August_2009-1a.jpg/640px-Hummingbird_August_2009-1a.jpg" alt="Hummingbirds">
-      <h3>Feeding Hummingbirds</h3>
-      <p>Learn the best ways to attract and care for hummingbirds in your backyard.</p>
-      <div class="buy-buttons">
-        <a href="#">Venmo</a>
-        <a href="#">Cash App</a>
+    <h2>Available Guides</h2>
+    <div class="guide-list">
+div class="guide">
+        <img src="https://i.imgur.com/zvIQbWW.jpg" alt="Grilling & Smoking Meat">
+        <div class="guide-content">
+          <h3>Grilling & Smoking Meat</h3>
+          <p>Master the fire with juicy recipes, smoker tips, and bold BBQ wisdom.</p>
+          <div class="price">$1.00</div>
+        </div>
       </div>
-    </div>
-
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bird_Feeder_at_Costa_Rica.jpg/640px-Bird_Feeder_at_Costa_Rica.jpg" alt="Bird Feeding">
-      <h3>Backyard Bird Feeding</h3>
-      <p>Which seeds to use and how to keep your feathered guests happy year-round.</p>
-      <div class="buy-buttons">
-        <a href="#">Venmo</a>
-        <a href="#">Cash App</a>
+      <div class="guide">
+        <img src="https://i.imgur.com/kbKr9Nn.jpg" alt="Backyard Birds">
+        <div class="guide-content">
+          <h3>Feeding Backyard Birds</h3>
+          <p>Attract colorful birds, create DIY feeders, and build your own bird paradise.</p>
+          <div class="price">$1.00</div>
+        </div>
       </div>
-    </div>
-
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Golfing.jpg/640px-Golfing.jpg" alt="Golf Basics">
-      <h3>Golf Basics</h3>
-      <p>Get started with the right clubs, swing techniques, and course tips.</p>
-      <div class="buy-buttons">
-        <a href="#">Venmo</a>
-        <a href="#">Cash App</a>
+      <div class="guide">
+        <img src="https://i.imgur.com/LzK9YRX.jpg" alt="Classic Cars">
+        <div class="guide-content">
+          <h3>Classic Cars</h3>
+          <p>Explore muscle cars, legends, and design that changed America. Includes the ‘68 Barracuda!</p>
+          <div class="price">$1.00</div>
+        </div>
       </div>
-    </div>
-
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Shooting_Range.jpg/640px-Shooting_Range.jpg" alt="Shooting Tips">
-      <h3>Shooting Tips</h3>
-      <p>Safety, stance, and accuracy tips for responsible firearm use and range visits.</p>
-      <div class="buy-buttons">
-        <a href="#">Venmo</a>
-        <a href="#">Cash App</a>
+      <div class="guide">
+        <img src="https://i.imgur.com/N2AfchM.jpg" alt="Gardening Basics">
+        <div class="guide-content">
+          <h3>Gardening Basics</h3>
+          <p>Grow your own food, flowers, and joy. Includes soil, tools, and planting tips.</p>
+          <div class="price">$1.00</div>
+        </div>
       </div>
+/div>
+    <div class="bundle">
+      <h2>Bundle Deal</h2>
+      <p>Mix and Match <strong>Any 4 Guides for $3</strong></p>
+      <p>Send payment via Venmo (@Paultjohnson64) or CashApp ($Paultjohnson64)</p>
+      <p>Email delivery: <strong>paultjohnson1964@gmail.com</strong></p>
     </div>
-
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Fishing_in_Cape_Town.jpg/640px-Fishing_in_Cape_Town.jpg" alt="Fishing Guide">
-      <h3>Fishing Guide</h3>
-      <p>From bait to bobber, learn how to enjoy a relaxing and successful fishing trip.</p>
-      <div class="buy-buttons">
-        <a href="#">Venmo</a>
-        <a href="#">Cash App</a>
-      </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Paw Lee • Veteran-Owned • Clean Restrooms • Real Skills</p>
+    <div class="social-links">
+      <a href="https://www.pinterest.com" target="_blank"><img src="https://i.imgur.com/kXjK2Av.png" alt="Pinterest" /></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="https://i.imgur.com/AWbv7Gg.png" alt="Instagram" /></a>
+      <a href="https://www.facebook.com" target="_blank"><img src="https://i.imgur.com/YF5cM56.png" alt="Facebook" /></a>
     </div>
-
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Garden_Scene_-_geograph.org.uk_-_446211.jpg/640px-Garden_Scene_-_geograph.org.uk_-_446211.jpg" alt="Gardening Basics">
-      <h3>Gardening Basics</h3>
-      <p>Easy-to-follow steps to grow flowers, vegetables, and your green thumb.</p>
-      <div class="buy-buttons">
-        <a href="#">Venmo</a>
-        <a href="#">Cash App</a>
-      </div>
-    </div>
+  </footer>
+</body>
+</html>
