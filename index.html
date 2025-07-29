@@ -1,125 +1,135 @@
-!DOCTYPE html>
+!!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Paw Lee Guides</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Paw Lee's Rustpaw Guides</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background-color: #8B0000;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #ffe;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 0.75rem;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0;
+      margin-bottom: 0.5rem;
+    }
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      background-color: #eee;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Paw Lee $1 Digital Guides</h1>
-    <p>Veteran-Owned | Clean. Simple. Smart.</p>
+    <h1>Paw Lee's Rustpaw Guides</h1>
+    <div class="tagline">“Life Simplified” – Real Guides for Real Folks</div>
   </header>
 
-  <section class="intro">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Hummingbird_hovering.jpg" alt="Hummingbird Feeding" />
-    <h2>Welcome to Paw Lee</h2>
-    <p>Explore our $1 digital guides. Practical, visual, and proudly veteran-run. Every guide is handcrafted to help you learn and enjoy more for less.</p>
-  </section>
+  <main class="grid">
+ !-- Card Example -->
+    <a href="guides/bird-watching.html" class="card">
+      <img src="https://source.unsplash.com/featured/?birdwatching" alt="Bird Watching">
+      <div class="card-content">
+        <div class="card-title">Bird Watching Guide</div>
+        <p>Feed and identify your local feathered friends.</p>
+      </div>
+    </a>
 
-  <section class="guides">
-    <div class="guide">
-      <img src="https://cdn.pixabay.com/photo/2015/08/28/10/28/hummingbird-911264_1280.jpg" alt="Hummingbird Guide"/>
-      <h3>Hummingbird Guide</h3>
-      <p>Attract, feed, and enjoy hummingbirds in your own backyard. Tips, plants, feeders, and seasonal care.</p>
-      <p><strong>Price:</strong> $1<br/><strong>Payment:</strong> Venmo @Paultjohnson64 or Cash App $Paultjohnson64</p>
-    </div>
+    <a href="guides/gardening.html" class="card">
+      <img src="https://source.unsplash.com/featured/?gardening" alt="Gardening">
+      <div class="card-content">
+        <div class="card-title">Gardening Guide</div>
+        <p>Grow vegetables, flowers, and peace of mind.</p>
+      </div>
+    </a>
 
-   div class="guide">
-      <img src="https://cdn.pixabay.com/photo/2017/07/30/19/05/fishing-2556476_1280.jpg" alt="Fishing Guide"/>
-      <h3>Fishing Guide</h3>
-      <p>Learn freshwater basics: tackle, bait, casting, and catching. Perfect for beginners and casual anglers.</p>
-      <p><strong>Price:</strong> $1</p>
-    </div>
+    <a href="guides/smoking-meat.html" class="card">
+      <img src="https://source.unsplash.com/featured/?bbq" alt="Smoking Meat">
+      <div class="card-content">
+        <div class="card-title">Smoking & Grilling Guide</div>
+        <p>Master the fire, smoke the meat, savor the result.</p>
+      </div>
+    </a>
 
-    <div class="guide">
-      <img src="https://cdn.pixabay.com/photo/2017/08/10/11/44/gardening-2624264_1280.jpg" alt="Gardening Guide"/>
-      <h3>Gardening Guide</h3>
-      <p>Simple tips for growing flowers, herbs, vegetables, and maintaining a thriving backyard garden.</p>
-      <p><strong>Price:</strong> $1</p>
-    </div>
+    <a href="guides/classic-cars.html" class="card">
+      <img src="https://source.unsplash.com/featured/?classic-car" alt="Classic Cars">
+      <div class="card-content">
+        <div class="card-title">Classic Cars Guide</div>
+        <p>For lovers of chrome, torque, and Plymouth blues.</p>
+      </div>
+    </a>
 
-    <div class="guide">
-      <img src="https://cdn.pixabay.com/photo/2016/02/25/06/53/apple-pie-1225206_1280.jpg" alt="Pie Baking Guide"/>
-      <h3>Pie Baking</h3>
-      <p>Master crusts, fillings, and presentation. Classic recipes and baking techniques in a simple guide.</p>
-      <p><strong>Price:</strong> $1</p>
-    </div>
+    <a href="guides/cleaning.html" class="card">
+      <img src="https://source.unsplash.com/featured/?cleaning" alt="Cleaning Guide">
+      <div class="card-content">
+        <div class="card-title">Natural Cleaning Guide</div>
+        <p>Keep your home fresh and toxin-free.</p>
+      </div>
+    </a>
 
-    <div class="guide">
-      <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/morse-code-1018906_1280.jpg" alt="Morse Code Guide"/>
-      <h3>Morse Code Guide</h3>
-      <p>Learn to read and send Morse code efficiently. Great for hobbyists, preppers, or communicators.</p>
-      <p><strong>Price:</strong> $1</p>
-    </div>
- <div class="guide">
-      <img src="https://cdn.pixabay.com/photo/2017/03/02/09/04/golf-2118432_1280.jpg" alt="Golf Guide"/>
-      <h3>Golf Basics</h3>
-      <p>Tips, grip, swing, etiquette, and DIY practice drills. Designed for total beginners or those returning to the game.</p>
-      <p><strong>Price:</strong> $1</p>
-    </div>
+    <a href="guides/dogs.html" class="card">
+      <img src="https://source.unsplash.com/featured/?puppy" alt="Dogs">
+      <div class="card-content">
+        <div class="card-title">Dog Lovers Guide</div>
+        <p>Breeds, training, care — man’s best friend explained.</p>
+      </div>
+    </a>
+/main>
 
-    <div class="guide">
-      <img src="https://cdn.pixabay.com/photo/2016/03/27/17/39/guns-1282334_1280.jpg" alt="Shooting & Gun Guide"/>
-      <h3>Shooting Guide</h3>
-      <p>Safety, aim, maintenance, and basics of responsible recreational shooting and firearm care.</p>
-      <p><strong>Price:</strong> $1</p>
-    </div>
-div class="guide">
-      <img src="https://cdn.pixabay.com/photo/2016/07/02/20/47/farm-1499434_1280.jpg" alt="Farming Guide"/>
-      <h3>Small Farm Guide</h3>
-      <p>Raise ducks, geese, pheasants, and guinea hens. Covers shelter, feed, egg care, and flock tips.</p>
-      <p><strong>Price:</strong> $1</p>
-    </div>
-
-    <div class="guide">
-      <img src="https://cdn.pixabay.com/photo/2021/02/08/10/10/classic-car-5993339_1280.jpg" alt="Classic Car Guide"/>
-      <h3>Classic Car Guide</h3>
-      <p>Learn about vintage beauties like the 1968 Barracuda, '49 Power Wagon, and pre-1950 gems.</p>
-      <p><strong>Price:</strong> $1</p>
-    </div>
-
-    <div class="guide">
-      <img src="https://cdn.pixabay.com/photo/2015/05/15/14/50/dog-768766_1280.jpg" alt="Dog Guide"/>
-      <h3>Dog Guide</h3>
-      <p>Breed traits, care, feeding, and training essentials. Great for new dog owners and curious minds.</p>
-      <p><strong>Price:</strong> $1</p>
-    </div>
-
-    <div class="guide">
-      <img src="https://cdn.pixabay.com/photo/2016/11/29/05/08/grill-1867394_1280.jpg" alt="Grilling Guide"/>
-      <h3>Grilling & Smoking Meat</h3>
-      <p>From fire to flavor—learn charcoal, pellet, or wood smoking for unbeatable backyard BBQ.</p>
-      <p><strong>Price:</strong> $1</p>
-    </div>
-
-    <div class="guide">
-      <img src="https://cdn.pixabay.com/photo/2020/01/27/10/47/garage-4796965_1280.jpg" alt="Man Cave Guide"/>
-      <h3>Man Caves & Garage Caves</h3>
-      <p>Design your own hideout with function, flair, and fun. Includes she sheds and multi-use tips.</p>
-      <p><strong>Price:</strong> $1</p>
-    </div>
-div class="guide">
-      <img src="https://cdn.pixabay.com/photo/2015/05/15/14/47/sewing-768546_1280.jpg" alt="Sewing Guide"/>
-      <h3>Sewing Basics</h3>
-      <p>Learn to sew by hand or with a machine. Includes stitches, tools, repairs, and starter projects.</p>
-      <p><strong>Price:</strong> $1</p>
-    </div>
-
-    <div class="guide">
-      <img src="https://cdn.pixabay.com/photo/2015/06/01/07/23/patchwork-793799_1280.jpg" alt="Quilting Guide"/>
-      <h3>Quilting Guide</h3>
-      <p>Explore fabrics, patterns, piecing, and hand or machine quilting in this step-by-step beginner guide.</p>
-      <p><strong>Price:</strong> $1</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>📧 Email: paultjohnson1964@gmail.com</p>
-    <p>💵 Pay via Venmo: @Paultjohnson64 or Cash App: $Paultjohnson64</p>
-    <p>🦊 Proudly Veteran-Owned | Powered by Paw Lee</p>
+  <footer class="footer">
+    Veteran-Owned • Powered by Paw Lee © 2025 • All Rights Reserved
   </footer>
-</body>
-</html>
 
+</body>
+</html
