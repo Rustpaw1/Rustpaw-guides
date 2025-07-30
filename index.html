@@ -1,135 +1,210 @@
-!!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Paw Lee's Rustpaw Guides</title>
+  <title>Paw Lee Guides & Goods</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fdfdfd;
+      font-family: 'Raleway', sans-serif;
+      background-color: #fefefe;
       color: #333;
     }
     header {
-      background-color: #8B0000;
-      color: white;
+      background-color: #fff;
       padding: 1rem;
-      text-align: center;
+      border-bottom: 4px solid #c00;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     header h1 {
+      color: #c00;
+      font-size: 2rem;
       margin: 0;
+    }
+    .logo {
+      height: 60px;
+    }
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 0.5rem;
+      border: 2px solid transparent;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      border-color: #c00;
+      background-color: #ffeaea;
+    }
+    .hero {
+      background-image: url('https://cdn.pixabay.com/photo/2017/01/20/00/30/road-1993554_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+      text-align: center;
+    }
+    .hero h2 {
       font-size: 2.5rem;
     }
-    .tagline {
-      font-size: 1.2rem;
-      font-style: italic;
-      color: #ffe;
+    .section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
     }
-    .grid {
+    .section h3 {
+      font-size: 2rem;
+      color: #c00;
+      margin-bottom: 1rem;
+    }
+    .guides {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1rem;
-      padding: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
     }
     .card {
-      background: #fff;
-      border-radius: 12px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       transition: transform 0.2s;
     }
     .card:hover {
-      transform: scale(1.02);
+      transform: translateY(-5px);
     }
     .card img {
       width: 100%;
       height: 180px;
       object-fit: cover;
     }
-    .card-content {
-      padding: 0.75rem;
-    }
-    .card-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin: 0;
-      margin-bottom: 0.5rem;
-    }
-    .footer {
-      text-align: center;
+    .card-body {
       padding: 1rem;
-      font-size: 0.9rem;
-      color: #888;
-      background-color: #eee;
     }
-    a {
+.card-body h4 {
+      margin: 0 0 0.5rem;
+      color: #222;
+    }
+    .card-body p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .buy-buttons {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .buy-buttons a {
+      display: inline-block;
+      background-color: #c00;
+      color: #fff;
+      text-align: center;
+      padding: 0.6rem;
+      border-radius: 5px;
       text-decoration: none;
-      color: inherit;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .buy-buttons a:hover {
+      background-color: #a00;
+    }
+    footer {
+      background-color: #222;
+      color: #ddd;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Paw Lee's Rustpaw Guides</h1>
-    <div class="tagline">“Life Simplified” – Real Guides for Real Folks</div>
+    <h1><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Paw Lee logo" class="logo"> Paw Lee</h1>
+    <nav>
+      <a href="#guides">Guides</a>
+      <a href="#pay">Pay</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main class="grid">
- !-- Card Example -->
-    <a href="guides/bird-watching.html" class="card">
-      <img src="https://source.unsplash.com/featured/?birdwatching" alt="Bird Watching">
-      <div class="card-content">
-        <div class="card-title">Bird Watching Guide</div>
-        <p>Feed and identify your local feathered friends.</p>
-      </div>
-    </a>
+  <div class="hero">
+    <h2>Life Simplified. $1 at a Time.</h2>
+  </div>
 
-    <a href="guides/gardening.html" class="card">
-      <img src="https://source.unsplash.com/featured/?gardening" alt="Gardening">
-      <div class="card-content">
-        <div class="card-title">Gardening Guide</div>
-        <p>Grow vegetables, flowers, and peace of mind.</p>
+  <section class="section" id="guides">
+    <h3>Featured $1 Guides</h3>
+    <div class="guides">
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2020/06/07/13/21/bird-5270370_1280.jpg" alt="Bird Feeding Guide">
+        <div class="card-body">
+          <h4>Backyard Bird Feeding</h4>
+          <p>Learn how to attract, feed, and care for wild birds around your home.</p>
+          <div class="buy-buttons">
+            <a href="#pay">Buy for $1</a>
+          </div>
+        </div>
       </div>
-    </a>
-
-    <a href="guides/smoking-meat.html" class="card">
-      <img src="https://source.unsplash.com/featured/?bbq" alt="Smoking Meat">
-      <div class="card-content">
-        <div class="card-title">Smoking & Grilling Guide</div>
-        <p>Master the fire, smoke the meat, savor the result.</p>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2017/01/06/19/15/barbecue-1951088_1280.jpg" alt="Grilling Guide">
+        <div class="card-body">
+          <h4>Grilling & Smoking Meat</h4>
+          <p>Fire up flavor with our quick-start grilling and smoking meat guide.</p>
+          <div class="buy-buttons">
+            <a href="#pay">Buy for $1</a>
+          </div>
+        </div>
       </div>
-    </a>
-
-    <a href="guides/classic-cars.html" class="card">
-      <img src="https://source.unsplash.com/featured/?classic-car" alt="Classic Cars">
-      <div class="card-content">
-        <div class="card-title">Classic Cars Guide</div>
-        <p>For lovers of chrome, torque, and Plymouth blues.</p>
+div class="card">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/09/18/cat-1866475_1280.jpg" alt="Cat Guide">
+        <div class="card-body">
+          <h4>Cats: Breeds & Care</h4>
+          <p>A colorful, helpful guide for cat owners and feline lovers alike.</p>
+          <div class="buy-buttons">
+            <a href="#pay">Buy for $1</a>
+          </div>
+        </div>
       </div>
-    </a>
+    </div>
+  </section>
 
-    <a href="guides/cleaning.html" class="card">
-      <img src="https://source.unsplash.com/featured/?cleaning" alt="Cleaning Guide">
-      <div class="card-content">
-        <div class="card-title">Natural Cleaning Guide</div>
-        <p>Keep your home fresh and toxin-free.</p>
-      </div>
-    </a>
+  <section class="section" id="pay">
+    <h3>How to Pay</h3>
+    <p>Send $1 per guide using any of the options below, and your guide will be delivered manually via email. Use the subject line to tell us which guide you want!</p>
+    <div class="buy-buttons">
+      <a href="https://venmo.com/Paultjohnson64" target="_blank">Pay via Venmo (@Paultjohnson64)</a>
+      <a href="mailto:paultjohnson1964@gmail.com?subject=Guide%20Purchase%20via%20Zelle">Pay via Zelle (paultjohnson1964@gmail.com)</a>
+      <a href="https://cash.app/$Paultjohnson64" target="_blank">Pay via Cash App ($Paultjohnson64)</a>
+    </div>
+  </section>
 
-    <a href="guides/dogs.html" class="card">
-      <img src="https://source.unsplash.com/featured/?puppy" alt="Dogs">
-      <div class="card-content">
-        <div class="card-title">Dog Lovers Guide</div>
-        <p>Breeds, training, care — man’s best friend explained.</p>
-      </div>
-    </a>
-/main>
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: <a href="mailto:paultjohnson1964@gmail.com">paultjohnson1964@gmail.com</a></p>
+    <p>Veteran-owned. Rustic. Real. 100% American grit.</p>
+  </section>
 
-  <footer class="footer">
-    Veteran-Owned • Powered by Paw Lee © 2025 • All Rights Reserved
+  <footer>
+    &copy; 2025 Paw Lee™ | Powered by ideas, built for good. <br />
+    Built with ❤️ by Paul Johnson | All rights reserved.
   </footer>
-
 </body>
-</html
+</html>
+
