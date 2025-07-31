@@ -1,1 +1,129 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paw Lee Guides</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav {
+      background: #444;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+.card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+      flex-grow: 1;
+    }
+    .card-content h3 {
+      margin-top: 0;
+    }
+    .card-content p {
+      color: #666;
+    }
+    .card-button {
+      background: #cc0000;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .card-button:hover {
+      background: #990000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Paw Lee Guides</h1>
+  </header>
+  <nav>
+    <a href="#grilling">Grilling</a>
+    <a href="#gardening">Gardening</a>
+    <a href="#classic-cars">Classic Cars</a>
+    <a href="#birds">Birds</a>
+  </nav>
+  <main class="grid">
+section id="grilling" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/BBQ_grill_example.jpg" alt="Grilling Guide" />
+      <div class="card-content">
+        <h3>Grilling</h3>
+        <p>Learn all about grilling techniques, recipes, and tips for perfect BBQ.</p>
+      </div>
+      <button class="card-button" onclick="window.location.href='https://example.com/grilling-guide'">Explore Grilling</button>
+    </section>
+    <section id="gardening" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Gardening_in_the_springtime.jpg" alt="Gardening Guide" />
+      <div class="card-content">
+        <h3>Gardening</h3>
+        <p>Everything you need to know about growing healthy plants and gardens.</p>
+      </div>
+      <button class="card-button" onclick="window.location.href='https://example.com/gardening-guide'">Explore Gardening</button>
+    </section>
+    <section id="classic-cars" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Vintage_Car_Show.jpg" alt="Classic Cars Guide" />
+      <div class="card-content">
+        <h3>Classic Cars</h3>
+        <p>Explore vintage car models, restoration tips, and collector’s guides.</p>
+      </div>
+      <button class="card-button" onclick="window.location.href='https://example.com/classic-cars-guide'">Explore Classic Cars</button>
+    </section>
+    <section id="birds" class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/American_goldfinch_male_summer.jpg" alt="Birds Guide" />
+      <div class="card-content">
+        <h3>Birds</h3>
+        <p>Discover local birds, feeding tips, and bird watching guides.</p>
+      </div>
+      <button class="card-button" onclick="window.location.href='https://example.com/birds-guide'">Explore Birds</button>
+    </section>
+  </main>
+</body>
+</html>
 
